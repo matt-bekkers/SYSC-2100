@@ -5,8 +5,8 @@ Case study: a function that uses Python's str, list, tuple set and dict
 abstract data types.
 """
 
-__author__ = ''
-__student_number__ = ''
+__author__ = 'Matthé Bekkers'
+__student_number__ = '101297066'
 
 import string
 
@@ -111,6 +111,12 @@ def words_with_frequency(hist: dict[str, int], n: int) -> list[str]:
     >>> words_with_frequency(hist, 5)  # Which words occur five times?
     """
     # Write your code for Exercise 3 here.
+    words = []
+    for word in hist:
+        if hist[word] == n:
+            words.append(word)
+
+    return words
 
 
 if __name__ == '__main__':
@@ -119,5 +125,11 @@ if __name__ == '__main__':
     hist = build_histogram(filename)
     print('File', filename, 'contains', len(hist), 'distinct words')
     print('The histogram is:', hist)
+    most_frequent, frequency = most_frequent_word(hist)
+    print("The most frequent word is: " + most_frequent)
+    print("# of occurences: " + str(frequency))
 
+    hist = build_histogram("two_cities.txt")
+    print(words_with_frequency(hist, 1))
+    print(words_with_frequency(hist, 2))
     # Write your code for Exercise 2, Step 5, here.

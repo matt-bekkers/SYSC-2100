@@ -3,8 +3,8 @@ SYSC 2100 Winter 2024
 Lab 1, Part 3, Exercise 4, Extra-Practice Exercise 5
 """
 
-__author__ = ''
-__student_number__ = ''
+__author__ = 'Matthé Bekkers'
+__student_number__ = '101297066'
 
 import string
 
@@ -24,6 +24,32 @@ def build_concordance(filename: str) -> dict[str, list[int]]:
 
     >>> concordance = build_concordance('sons_of_martha.txt')
     """
+    concordance = {}
+
+    file = open(filename, "r")
+
+    line_count = 0
+    for line in file:
+
+        word_list = line.split()
+        word_set = set()
+
+        for word in word_list:
+            word = word.strip(string.punctuation).lower()
+            if word not in word_set and word != "":
+                lines_list = concordance.get(word, [])
+                lines_list.append(line_count)
+                word_set.add(word)
+                concordance[word] = lines_list
+
+        line_count += 1
+
+
+    return concordance
+
+
+
+        
 
 
 # Extra-Practice: Exercise 5 Solution
@@ -32,3 +58,5 @@ def build_concordance(filename: str) -> dict[str, list[int]]:
 if __name__ == '__main__':
     pass
     # Write your solution to Extra-practice Exercise 5 here
+    filename = 'sons_of_martha.txt'
+    print(build_concordance(filename))
