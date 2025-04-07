@@ -1,0 +1,74 @@
+test_add1 (__main__.AddTestCase)
+Test s = BSTSet(), s.add(20). ... ok
+test_add10 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18, 16, 22, 24]), s.add(15) (insert duplicate 25). ... ok
+test_add11 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18, 16, 22, 24]), s.add(16) (insert duplicate 16). ... ok
+test_add12 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18, 16, 22, 24]), s.add(24) (insert duplicate 24). ... ok
+test_add2 (__main__.AddTestCase)
+Test s = BSTSet([20]), s.add(15). ... ok
+test_add3 (__main__.AddTestCase)
+Test s = BSTSet([20, 15]), s.add(25). ... ok
+test_add4 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25]), s.add(18). ... ok
+test_add5 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18]), s.add(16). ... ok
+test_add6 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18, 16]), s.add(22). ... ok
+test_add7 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18, 16, 22]), s.add(24). ... ok
+test_add8 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18, 16, 22, 24]), s.add(20) (insert duplicate 20). ... ok
+test_add9 (__main__.AddTestCase)
+Test s = BSTSet([20, 15, 25, 18, 16, 22, 24]), s.add(15) (insert duplicate 15). ... ok
+test_contains1 (__main__.ContainsTestCase)
+Test '20 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains2 (__main__.ContainsTestCase)
+Test '15 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains3 (__main__.ContainsTestCase)
+Test '25 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains4 (__main__.ContainsTestCase)
+Test '18 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains5 (__main__.ContainsTestCase)
+Test '16 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains6 (__main__.ContainsTestCase)
+Test '22 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains7 (__main__.ContainsTestCase)
+Test '24 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains8 (__main__.ContainsTestCase)
+Test '10 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_contains9 (__main__.ContainsTestCase)
+Test '30 in s' with s == {20, 15, 25, 18, 16, 22, 24}. ... ok
+test_eq1 (__main__.EqTestCase)
+Test __eq__ with two empty sets. ... ok
+test_eq2 (__main__.EqTestCase)
+Test s1 == s2 with s1 == {1, 2, 3} and s2 == {3, 2, 1}. ... ok
+test_eq3 (__main__.EqTestCase)
+Test s1 == s2 with s1 == {1, 2, 3} and s2 == {4, 5, 6}. ... ok
+test_eq4 (__main__.EqTestCase)
+Test s1 == s2 with s1 == {1, 2, 3} and s2 == {1, 2, 3, 4, 5}. ... ok
+test_eq5 (__main__.EqTestCase)
+Test s == lst with s == {1, 2, 3} and lst == [1, 2, 3]. ... ok
+test_or1 (__main__.OrTestCase)
+Test newset = BSTSet() | BSTSet() (two empty sets). ... ok
+test_or2 (__main__.OrTestCase)
+Test newset = s1 | s2 with s1 == {1} and s2 == {1}. ... ok
+test_or3 (__main__.OrTestCase)
+Test newset = s1 | s2 with s1 == {1} and s2 == {2}. ... ok
+test_or4 (__main__.OrTestCase)
+Test newset = s1 | s2 with s1 == {1, 3, 5} and s2 == {3, 4, 5, 6}. ... ok
+test_or5 (__main__.OrTestCase)
+Test newset = s | lst with s == {1, 3, 5} and lst == [3, 4, 5, 6]. ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.002s
+
+OK
+
+Lab 9 grading summary for Matthé Bekkers, 101297066:
+No. of tests run: 31
+No. of tests passed: 31
+No. of failures: 0
+No. of errors: 0
+Score = 10 / 10

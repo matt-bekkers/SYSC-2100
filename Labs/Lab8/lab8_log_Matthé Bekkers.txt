@@ -1,0 +1,44 @@
+test_build_binary_tree1 (__main__.BuildBinaryTreeTestCase)
+Verify top level of the tree returned by build_binary_tree(). ... ok
+test_build_binary_tree2 (__main__.BuildBinaryTreeTestCase)
+Verify top two levels of the tree returned by build_binary_tree(). ... ok
+test_build_binary_tree3 (__main__.BuildBinaryTreeTestCase)
+Verify top three levels of the tree returned by build_binary_tree(). ... ok
+test_build_binary_tree4 (__main__.BuildBinaryTreeTestCase)
+Verify all levels of the tree returned by build_binary_tree(). ... ok
+test_build_perfect_binary_tree1 (__main__.BuildPerfectBinaryTreeTestCase)
+Verify top level of the tree returned by build_perfect_binary_tree(). ... ok
+test_build_perfect_binary_tree2 (__main__.BuildPerfectBinaryTreeTestCase)
+Verify top two levels of the tree returned by build_perfect_binary_tree(). ... ok
+test_build_perfect_binary_tree3 (__main__.BuildPerfectBinaryTreeTestCase)
+Verify all levels of the tree returned by build_perfect_binary_tree(). ... ok
+test_count1 (__main__.CountTest)
+Test tree = BinaryTree(), tree.count(5). ... ok
+test_count2 (__main__.CountTest)
+Test tree.count(5) on a tree containing one 5, three 7's, one 9 and two 12's. ... ok
+test_count3 (__main__.CountTest)
+Test tree.count(7) on a tree containing one 5, three 7's, one 9 and two 12's. ... ok
+test_count4 (__main__.CountTest)
+Test tree.count(9) on a tree containing one 5, three 7's, one 9 and two 12's. ... ok
+test_count5 (__main__.CountTest)
+Test tree.count(9) on a tree containing one 5, three 7's, one 9 and two 12's. ... ok
+test_count6 (__main__.CountTest)
+Test tree.count(4) on a tree containing one 5, three 7's, one 9 and two 12's. ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK
+Output from preorder_print isn't checked by this program.
+The student should verify that, when called on the tree from Exercise 2, the output is: 5 7 17 9 12 6 1 (one number per line)
+Output from inorder_print isn't checked by this program.
+The student should verify that, when called on the tree from Exercise 2, the output is: 17 7 9 5 12 1 6 (one number per line)
+Output from postorder_print isn't checked by this program.
+The student should verify that, when called on the tree from Exercise 2, the output is: 17 9 7 1 6 12 5 (one number per line)
+
+Lab 8 grading summary for Matthé Bekkers, 101297066:
+No. of tests run: 13
+No. of tests passed: 13
+No. of failures: 0
+No. of errors: 0
+Score = 10 / 10
